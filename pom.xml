@@ -12,8 +12,8 @@
         <matsim.version>14.0-PR1893</matsim.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -28,10 +28,11 @@
             <version>${matsim.version}</version>
         </dependency>
 
+
         <dependency>
             <groupId>org.openmpi</groupId>
-            <artifactId>mpi</artifactId>
-            <version>4.1.2</version>
+            <artifactId>mpi-math-cluster</artifactId>
+            <version>4.1.2-java-11</version>
         </dependency>
 
 
@@ -97,7 +98,9 @@
         <repository>
             <id>local-mpi</id>
             <name>Local repo for Mpi java bindings</name>
-            <url>https://github.com/matsim-vsp/openmpi-mvn-repo</url>
+            <!--<url>https://github.com/matsim-vsp/openmpi-mvn-repo/tree/master/</url>-->
+           <!--<url>file://C:/Users/Janekdererste/Projects/openmpi-mvn-repo</url>-->
+            <url>https://openmpi-java-bindings.s3.eu-central-1.amazonaws.com/</url>
         </repository>
 
     </repositories>
