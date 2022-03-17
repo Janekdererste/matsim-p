@@ -3,20 +3,13 @@ package org.matsim.parallel;
 import mpi.MPI;
 import mpi.MPIException;
 import org.matsim.core.config.ConfigUtils;
-import org.matsim.core.controler.AbstractModule;
 import org.matsim.core.controler.Controler;
 import org.matsim.core.controler.OutputDirectoryHierarchy;
-import org.matsim.core.controler.events.AfterMobsimEvent;
-import org.matsim.core.controler.listener.AfterMobsimListener;
-import org.matsim.core.controler.listener.ControlerListener;
 import org.matsim.core.scenario.ScenarioUtils;
 import org.matsim.core.utils.io.IOUtils;
 import org.matsim.examples.ExamplesUtils;
 
-
-
 public class RunMinimalMPIExample {
-
 
     public static void main(String[] args) throws MPIException {
 

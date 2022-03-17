@@ -6,8 +6,6 @@ import mpi.MPIException;
 
 public class MPIHelloWorld {
 
-
-
     public static void main(String[] args) throws MPIException {
 
         MPI.Init(args);
@@ -17,7 +15,5 @@ public class MPIHelloWorld {
         System.out.println("Hello world from rank " + myrank + " of " + size);
 
         MPI.Finalize();
-
-
     }
 }

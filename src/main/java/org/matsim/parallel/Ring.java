@@ -5,7 +5,6 @@ import mpi.* ;
 class Ring {
     static public void main(String[] args) throws MPIException, InterruptedException {
 
-
         MPI.Init(args) ;
 
         int source;  // Rank of sender
