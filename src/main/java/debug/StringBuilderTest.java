@@ -3,6 +3,8 @@ package debug;
 import mpi.MPI;
 import mpi.MPIException;
 
+import java.util.UUID;
+
 public class StringBuilderTest {
 
     public static void main(String[] args) throws MPIException {
@@ -20,7 +22,8 @@ public class StringBuilderTest {
 
         for (int i = 0; i < 1000; i++ ) {
 
-            builder.append(i);
+            var uuid = UUID.randomUUID().toString();
+            builder.append(uuid);
         }
 
         System.out.println(builder);
